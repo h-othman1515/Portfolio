@@ -17,4 +17,4 @@ To master the fundamentals of the web, this project was built using a **"No-Fram
 * **Refactoring Philosophy:** Much like the "second-chance" stories I enjoy, I believe every piece of complex code deserves a chance to be refactored into something more elegant and efficient.
 
 ## 🔗 Deployment
-This mission is live and operational at: **[Insert Your GitHub Pages Link Here]**/>
+This mission is live and operational at: **https://h-othman1515.github.io/Portfolio/**/>
