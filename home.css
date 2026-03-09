@@ -8,7 +8,6 @@
 body {
     background-color: #0b0e14;
     color: #f8faf8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
@@ -349,6 +348,7 @@ h1, h2, h3,h4,
     color: #00d1ff;
 }
 
+
 /* Back */
 .back {
     display: flex;
@@ -483,7 +483,6 @@ h1, h2, h3,h4,
     opacity: 1;
 }
 
-
 /* Sections */
 .container {
     padding: 80px 10%;
@@ -512,11 +511,17 @@ h1, h2, h3,h4,
 }
 
 /* Skills and Projects */
-.skills-grid,
-.project-grid {
+.skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
+}
+
+/* Project Grid Layout */
+.project-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns:repeat(2, 1fr);
 }
 
 .skill-card,
@@ -526,6 +531,23 @@ h1, h2, h3,h4,
     padding: 32px;
     border-radius: 10px;
     transition: all 0.4s ease;
+}
+
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    /* overflow: hidden; */
 }
 
 .project-card:hover {
@@ -545,9 +567,8 @@ h1, h2, h3,h4,
 /* footer */
 footer {
     background-color: #0b0e14;
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
-    height: 200px;
 }
 
 .footer-content {
@@ -566,6 +587,7 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Socials linls */
 .socials {
     display: flex;
     justify-content: center;
@@ -573,23 +595,89 @@ footer {
 }
 
 .socials a {
-    color: #333;
-    margin: 0 10px;
+    color: #00d1ff;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .socials a:hover {
-    color: #0066cc;
+    text-shadow: 0 0 10px #00d1ff;
 }
 
 
+/* Icons */
+.tag-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.title-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.project-tags span {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
 /* Responsive (Mobile/Tablet) */
 @media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .nav-links {
         display: none;
     }
 
-    .hero h1 {
+    .hero h1{
         font-size: 23px;
+    }
+}
+
+/* Hide the actual checkbox */
+.nav-toggle {
+    display: none;
+}
+
+/* Style the menu button */
+.menu-icon {
+    display: none; /* Hidden on desktop */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        width: 100%;
+        background: rgba(11, 14, 20, 0.95);
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    /* Magic: When checkbox is checked, show the nav-links */
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
     }
 }

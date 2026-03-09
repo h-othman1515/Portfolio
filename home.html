@@ -9,8 +9,9 @@
     <link rel="icon" type="image/svg+xml" href="assets/images/urans.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
 
@@ -50,11 +51,15 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-            <div class="back">
-                <a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
-            </div>
+            <div class="back"><a href="index.html"><i class="fa-solid fa-angle-left"></i></a></div>
             <div class="logo-text"><span>HANAN.</span>COSMOS</div>
         </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
         <ul class="nav-links">
             <li><a href="#about">Story</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -62,6 +67,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
 
     <main>
         <!-- Hero -->
@@ -86,18 +92,12 @@
                     binary systems of Computer Science.</p>
 
                 <br>
-                <p>To me, a bug in a script isn't a failure—it’s an opportunity for a second chance. Just like the
-                    stories I admire where characters rewrite their fates, I find deep satisfaction in refactoring
-                    'black hole' code into something brilliant and efficient.</p>
-
-                <br>
-                <p>When I’m not at the helm of a project, I’m capturing the universe through my camera lens.
-                    Photography is my favorite way to explore the world, and it’s a hobby that constantly sharpens my
-                    eye for UI/UX—reminding me that the perfect 'shot' (or layout) requires the right balance of light,
-                    focus, and perspective. My mission is simple: to build digital structures that are as robust as a
-                    starship and as breathtaking as a 
-                    <span class="nebula-hover"> nebula <img src="assets/images/nebula.jpg" alt="Nebula View" class="nebula-popup"></span>.
-                    </p>
+                <p>My mission is simple: to build digital structures that are as robust as a
+                    starship and as breathtaking as a
+                    <span class="nebula-hover"> nebula
+                        <img src="assets/images/nebula.jpg" alt="Nebula View" class="nebula-popup">
+                    </span>.
+                </p>
             </div>
 
             <h4 class="facts">Space Fact</h4>
@@ -112,12 +112,71 @@
         <section id="skills" class="container">
             <h2 class="section-title">Technical Payload</h2>
             <div class="skills-grid">
-                <div class="skill-card">HTML5</div>
-                <div class="skill-card">CSS3</div>
+                <div class="skill-card">
+                    <img class="logo" src="assets/logos/HTML5.png" alt="HTML5"> HTML5
+                </div>
+                <div class="skill-card"><img class="logo" src="assets/logos/CSS3.png" alt="CSS3"> CSS3</div>
+                <div class="skill-card"><img class="logo" src="assets/logos/NET_logo.png" alt="ASP.NET"> ASP.NET</div>
                 <div class="skill-card">CSS Animations</div>
                 <div class="skill-card">Responsive Design</div>
-                <div class="skill-card">ASP.NET</div>
-                <div class="skill-card">Flutter</div>
+                <div class="skill-card"><img class="logo" src="assets/logos/flutter.png" alt="Flutter"> Flutter</div>
+                <div class="skill-card"><img class="logo" src="assets/logos/java_logo.png" alt="Java"> Java</div>
+                <div class="skill-card"><img class="logo" src="assets/logos/Python_logo.png" alt="Python"> Python</div>
+                <div class="skill-card"><img class="logo" src="assets/logos/SQL.png" alt="SQL"> SQL</div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="container">
+            <h2 class="section-title">Timeline</h2>
+
+            <div class="glass-card">
+                <h3 class="highlight"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                <div class="timeline-item">
+                    <h4>Trainee Web Developer</h4>
+                    <p class="tagline">
+                        <img src="assets/logos/Orange.png" alt="orange logo" class="title-icon">Orange .NET Trainanig |
+                        Feb-2026 - May-2026
+                    </p>
+                    <p>Delving deep into the world of web development, honing my skills in HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="glass-card">
+                <h3 class="highlight"><i class="fa-solid fa-handshake-angle"></i> Volunteering</h3>
+                <div class="timeline-item">
+                    <h4><img src="assets/logos/icit_25.png" alt="icit 2025" class="title-icon">
+                        Photographer & Volunteer - ICIT 2025</h4>
+                    <p class="tagline">Amman, Jordan | May 2025</p>
+                    <p>Photographed sessions and supported event logistics for the international tech conference.</p>
+                </div>
+                <br>
+                <div class="timeline-item">
+                    <h4>
+                        <img src="assets/logos/icit_23.png" alt="icit 2023" class="title-icon">
+                        Volunteer - ICIT 2023
+                    </h4>
+                    <p class="tagline">Amman, Jordan | August 2023</p>
+                    <p>Assisted in organizing the international tech conference at Al-Zaytoonah University.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="container">
+            <h2 class="section-title">Academic Orbit</h2>
+            <div class="glass-card">
+                <div class="timeline-item">
+                    <h3 class="highlight">
+                        <img src="assets/logos/alzaytoonah_logo.png" alt="al zaytoonah logo" class="title-icon">
+                        Bachelor's Degree in Computer Science
+                    </h3>
+                    <p class="tagline">Al-Zaytoonah University of Jordan | 2021 - 2025</p>
+                    <p><strong>GPA:</strong> 88.8/100 - Excellent. <br><strong>Rank:</strong> 2nd Top of my class.</p>
+                </div>
             </div>
         </section>
 
@@ -138,11 +197,12 @@
                     </p>
                     <br>
                     <div class="project-tags">
-                        <span>ASP.NET MVC</span>
-                        <span>SQL Server</span>
-                        <span>JS</span>
+                        <span><img src="assets/logos/NET_logo.png" alt="ASP.NET" class="tag-icon">ASP.NET</span>
+                        <span><img src="assets/logos/SQL.png" alt="SQL" class="tag-icon">SQL Server</span>
+                        <span><img src="assets/logos/js-logo.png" alt="JavaScript" class="tag-icon">JS</span>
                     </div>
-                    <a href="https://github.com/h-othman1515" class="project-link">Source Code</a>
+                    <a href="https://github.com/h-othman1515/LavenderVeil.git" target="_blank"
+                        class="project-link">Source Code</a>
                 </article>
 
                 <article class="project-card">
@@ -157,11 +217,34 @@
                     </p>
                     <br>
                     <div class="project-tags">
-                        <span>Flutter</span>
-                        <span>Dart</span>
+                        <span><img src="assets/logos/flutter.png" alt="flutter" class="tag-icon">Flutter</span>
+                        <span><img src="assets/logos/Dart-logo.png" alt="dart" class="tag-icon">Dart</span>
                         <span>UI/UX</span>
                     </div>
                     <a href="https://www.canva.com/design/DAHB-BuKvWk/hbBGMrFFMSYGSBeEhpwcSg/edit?utm_content=DAHB-BuKvWk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                        target="_blank" class="project-link">Source Code</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img-container">
+                        <img class="project-img" src="assets/images/space_exploration.png"
+                            alt="Space Exploration Website">
+                    </div>
+                    <h3>Cosmos Explorer</h3>
+                    <p><strong>Mission:</strong> Visualizing the vastness of our solar system through interactive 3D
+                        rendering.
+                        <br>
+                        <strong>Directive:</strong> Built a planetary database featuring 3D visualizations of the
+                        planets and the Moon. Developed dynamic interactive elements to educate users on
+                        celestial bodies.
+                    </p>
+                    <br>
+                    <div class="project-tags">
+                        <span><img src="assets/logos/HTML5.png" alt="HTML5" class="tag-icon">HTML</span>
+                        <span><img src="assets/logos/CSS3.png" alt="CSS3" class="tag-icon">CSS</span>
+                        <span><img src="assets/logos/js-logo.png" alt="JavaScript" class="tag-icon">JS</span>
+                    </div>
+                    <a href="https://h-othman1515.github.io/space-exploration/index.html" target="_blank"
                         class="project-link">Source Code</a>
                 </article>
             </div>
