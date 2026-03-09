@@ -647,14 +647,13 @@ footer {
     }
 }
 
-/* Hide the actual checkbox */
 .nav-toggle {
     display: none;
 }
 
-/* Style the menu button */
+/*  menu */
 .menu-icon {
-    display: none; /* Hidden on desktop */
+    display: none; 
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
@@ -666,18 +665,18 @@ footer {
     }
 
     .nav-links {
-        display: none; /* Hidden by default */
+        display: none; 
         position: fixed;
-        top: 60px; /* Adjust based on navbar height */
+        top: 60px; 
         left: 0;
         width: 100%;
         background: rgba(11, 14, 20, 0.95);
         flex-direction: column;
         padding: 20px 0;
     }
-
-    /* Magic: When checkbox is checked, show the nav-links */
+    
     .nav-toggle:checked ~ .nav-links {
         display: flex;
     }
+
 }
